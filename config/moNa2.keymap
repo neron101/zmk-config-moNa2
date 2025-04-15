@@ -47,10 +47,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W               &kp E         &kp R             &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O    &kp P
-&kp A               &kp S               &kp D         &kp F             &kp G        &trans         &kp MINUS      &kp H          &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z    &kp X               &kp C         &kp V             &kp B        &lt 4 COLON    &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &kp RS(SLASH)
-&mt LCTRL CAPSLOCK  &mt LEFT_SHIFT TAB  &kp LEFT_WIN  &lt 3 INT_HENKAN  &lt 2 SPACE  &lt 6 SPACE    &lt 1 ENTER    &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp Q             &kp W    &kp E             &kp R         &kp T                                      &kp Y          &kp U  &lt 5 I    &kp O    &kp P
+&kp A             &kp S    &kp D             &kp F         &kp G        &trans         &kp MINUS      &kp H          &kp J  &kp K      &kp L    &kp LEFT_BRACKET
+&mt LEFT_SHIFT Z  &kp X    &kp C             &kp V         &kp B        &lt 4 COLON    &kp SEMICOLON  &kp N          &kp M  &kp COMMA  &kp DOT  &kp RS(SLASH)
+&kp CLCK          &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &lt 2 SPACE  &lt 6 SPACE    &lt 1 ENTER    &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings =
@@ -60,10 +60,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &kp F12
+&kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                       &kp RS(NUMBER_6)  &kp RS(N7)  &kp RS(N8)  &kp RS(N9)  &kp RS(N0)
+&trans      &trans            &trans            &trans            &trans      &trans    &kp TILDE  &kp F6            &kp F7      &kp F8      &kp F9      &kp F10
+&trans      &trans            &trans            &trans            &trans      &trans    &trans     &trans            &trans      &trans      &trans      &kp F11
+&trans      &trans            &trans            &trans            &trans      &trans    &trans     &trans                                                &kp F12
             >;
 
             sensor-bindings = <&scroll_up_down>;
