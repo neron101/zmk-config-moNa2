@@ -50,7 +50,7 @@
 &kp Q     &kp W             &kp E               &kp R         &kp T                                    &kp Y          &kp U  &lt 5 I    &kp O    &kp P
 &kp A     &kp S             &kp D               &kp F         &kp G        &trans         &kp MINUS    &kp H          &kp J  &kp K      &kp L    &mt RIGHT_SHIFT LEFT_BRACKET
 &kp Z     &kp X             &kp C               &kp V         &kp B        &lt 4 COLON    &kp TILDE    &kp N          &kp M  &kp COMMA  &kp DOT  &kp RS(SLASH)
-&kp CLCK  &kp LEFT_CONTROL  &mt TAB LEFT_SHIFT  &kp LEFT_GUI  &lt 6 SPACE  &mkp MB1       &lt 1 ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
+&kp CLCK  &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &kp LEFT_GUI  &lt 6 SPACE  &mkp MB1       &lt 1 ENTER  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
@@ -121,7 +121,7 @@
 
             sensor-bindings =
                 <&scroll_up_down>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
         };
     };
 };
