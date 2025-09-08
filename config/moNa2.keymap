@@ -119,9 +119,7 @@
 &trans        &trans          &trans           &trans         &trans            &trans        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                           &trans
             >;
 
-            sensor-bindings =
-                <&scroll_up_down>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
     };
 };
