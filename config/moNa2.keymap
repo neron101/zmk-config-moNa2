@@ -59,7 +59,7 @@
         layer_1 {
             bindings = <
 &kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                    &kp RS(NUMBER_6)  &kp RS(N7)  &kp RS(N8)      &kp RS(N9)  &kp RS(N0)
-&kp LEFT    &kp UP_ARROW      &kp RIGHT         &trans            &trans      &trans    &trans  &trans            &trans      &kp MINUS       &kp TILDE   &trans
+&kp LEFT    &kp UP_ARROW      &kp RIGHT         &trans            &trans      &trans    &trans  &trans            &trans      &kp MINUS       &kp TILDE   &kp RIGHT_BRACKET
 &kp LEFT    &kp DOWN          &kp RIGHT         &trans            &trans      &trans    &trans  &trans            &trans      &kp LEFT_BRACE  &kp RBRC    &kp SLASH
 &trans      &trans            &trans            &trans            &trans      &trans    &trans  &trans                                                    &trans
             >;
@@ -113,13 +113,15 @@
 
         MOUSE {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4   &kp N5                                             &kp NUMBER_6     &kp N7      &kp N8     &kp N9            &kp N0
-&kp LEFT      &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_UP    &kp LANG_HANGEUL  &kp K_MUTE    &kp TILDE          &kp HOME         &mkp MB1    &mkp MB3   &mkp MB2          &kp RIGHT_BRACKET
-&trans        &kp DOWN_ARROW  &trans           &kp PAGE_DOWN  &kp LANG_HANJA    &mkp MB2      &kp SEMICOLON      &kp END          &kp K_MUTE  &kp COLON  &kp RS(NUMBER_1)  &kp SLASH
-&trans        &trans          &trans           &trans         &trans            &mkp MB1      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                                           &trans
+&kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3     &kp NUMBER_4   &kp N5                                         &kp NUMBER_6  &kp N7    &kp N8     &kp N9            &kp N0
+&kp LEFT        &kp UP_ARROW    &kp RIGHT_ARROW  &kp PAGE_UP    &kp LANG_HANGEUL  &kp K_MUTE    &kp TILDE      &kp HOME      &mkp MB1  &mkp MB3   &mkp MB2          &kp RIGHT_BRACKET
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN  &kp LANG_HANJA    &mkp MB2      &kp SEMICOLON  &kp END       &trans    &kp COLON  &kp RS(NUMBER_1)  &kp SLASH
+&trans          &trans          &trans           &trans         &trans            &mkp MB1      &trans         &trans                                               &trans
             >;
 
-            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
+            sensor-bindings =
+                <&scroll_up_down>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
