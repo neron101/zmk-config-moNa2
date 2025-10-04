@@ -48,7 +48,7 @@
         default_layer {
             bindings = <
 &mt LANG1 Q  &mt LANG2 W       &kp E               &kp R         &kp T                                    &kp Y          &kp U  &lt 5 I    &kp O              &kp P
-&mt CLCK A   &mt LEFT_SHIFT S  &kp D               &kp F         &kp G        &lt 4 COLON    &kp MINUS    &kp H          &kp J  &kp K      &mt RIGHT_SHIFT L  &mt RIGHT_SHIFT LEFT_BRACKET
+&kp A        &kp S             &kp D               &kp F         &kp G        &lt 4 COLON    &kp MINUS    &kp H          &kp J  &kp K      &mt RIGHT_SHIFT L  &mt RIGHT_SHIFT LEFT_BRACKET
 &kp Z        &kp X             &kp C               &kp V         &kp B        &mkp MB2       &kp TILDE    &kp N          &kp M  &kp COMMA  &kp DOT            &kp RS(SLASH)
 &kp CLCK     &kp LEFT_CONTROL  &mt LEFT_SHIFT TAB  &kp LEFT_GUI  &lt 6 SPACE  &mkp MB1       &lt 1 ENTER  &kp BACKSPACE                                       &kp RIGHT_SHIFT
             >;
@@ -58,10 +58,10 @@
 
         layer_1 {
             bindings = <
-&kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                               &kp RS(NUMBER_6)  &kp RS(N7)        &kp RS(N8)      &kp RS(N9)  &kp RS(N0)
-&kp LEFT    &kp UP_ARROW      &kp RIGHT         &trans            &trans      &trans    &kp C_VOLUME_UP    &kp HOME          &kp RS(NUMBER_1)  &kp MINUS       &kp TILDE   &kp RIGHT_BRACKET
-&kp LEFT    &kp DOWN          &kp RIGHT         &trans            &trans      &trans    &kp C_VOLUME_DOWN  &kp END           &trans            &kp LEFT_BRACE  &kp RBRC    &kp SLASH
-&trans      &trans            &trans            &trans            &trans      &trans    &kp K_MUTE         &trans                                                          &trans
+&kp LS(N1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(N5)                                   &kp RS(NUMBER_6)  &kp RS(N7)        &kp RS(N8)      &kp RS(N9)  &kp RS(N0)
+&kp LEFT    &kp UP_ARROW      &kp RIGHT         &kp PAGE_UP       &kp LANGUAGE_1  &trans    &kp C_VOLUME_UP    &kp HOME          &kp RS(NUMBER_1)  &kp MINUS       &kp TILDE   &kp RIGHT_BRACKET
+&kp LEFT    &kp DOWN          &kp RIGHT         &kp PAGE_DOWN     &kp LANG2       &trans    &kp C_VOLUME_DOWN  &kp END           &trans            &kp LEFT_BRACE  &kp RBRC    &kp SLASH
+&trans      &trans            &trans            &trans            &trans          &trans    &kp K_MUTE         &trans                                                          &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
